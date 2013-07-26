@@ -1,0 +1,5 @@
+C:\Projetos\Temporada1\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.dll
+C:\Projetos\Temporada1\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.pdb
+C:\Projetos\Temporada1\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.csprojResolveAssemblyReference.cache
+C:\Projetos\Temporada1\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.dll
+C:\Projetos\Temporada1\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.pdb
