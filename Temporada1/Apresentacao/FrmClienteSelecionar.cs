@@ -88,5 +88,13 @@ namespace Apresentacao
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void buttonInserir_Click(object sender, EventArgs e)
+        {
+            // Instancia o formulário de cadastro.
+            FrmCadastrar frmCadastrar = new FrmCadastrar();
+
+            frmCadastrar.ShowDialog();
+        }
     }
 }

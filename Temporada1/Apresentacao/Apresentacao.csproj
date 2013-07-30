@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastrar.Designer.cs">
+      <DependentUpon>FrmCadastrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmClienteSelecionar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCadastrar.resx">
+      <DependentUpon>FrmCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmClienteSelecionar.resx">
       <DependentUpon>FrmClienteSelecionar.cs</DependentUpon>
     </EmbeddedResource>
