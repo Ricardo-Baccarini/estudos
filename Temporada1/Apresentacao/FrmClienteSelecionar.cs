@@ -92,7 +92,23 @@ namespace Apresentacao
         private void buttonInserir_Click(object sender, EventArgs e)
         {
             // Instancia o formulário de cadastro.
-            FrmCadastrar frmCadastrar = new FrmCadastrar();
+            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Inserir);
+
+            frmCadastrar.ShowDialog();
+        }
+
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+            // Instancia o formulário de cadastro.
+            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Alterar);
+
+            frmCadastrar.ShowDialog();
+        }
+
+        private void buttonConsultar_Click(object sender, EventArgs e)
+        {
+            // Instancia o formulário de cadastro.
+            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Consultar);
 
             frmCadastrar.ShowDialog();
         }

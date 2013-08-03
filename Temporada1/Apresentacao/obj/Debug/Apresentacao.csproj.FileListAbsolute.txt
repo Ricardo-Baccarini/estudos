@@ -14,3 +14,4 @@ C:\Projetos\Temporada1\Apresentacao\bin\Debug\AcessoBancoDados.dll
 C:\Projetos\Temporada1\Apresentacao\bin\Debug\Negocios.pdb
 C:\Projetos\Temporada1\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
 C:\Projetos\Temporada1\Apresentacao\bin\Debug\AcessoBancoDados.pdb
+C:\Projetos\Temporada1\Apresentacao\obj\Debug\Apresentacao.FrmCadastrar.resources
