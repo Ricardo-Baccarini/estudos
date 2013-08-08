@@ -92,23 +92,41 @@ namespace Apresentacao
         private void buttonInserir_Click(object sender, EventArgs e)
         {
             // Instancia o formulário de cadastro.
-            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Inserir);
+            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Inserir, null);
 
             frmCadastrar.ShowDialog();
         }
 
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
+            if (dataGridViewPrincipal.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Não há registro selecionado.");
+                return;
+            }
+
+            // Pega o Cliente Selecionado no Grid.
+            Cliente clienteSelecionado = (dataGridViewPrincipal.SelectedRows[0].DataBoundItem as Cliente);
+
             // Instancia o formulário de cadastro.
-            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Alterar);
+            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Alterar, clienteSelecionado);
 
             frmCadastrar.ShowDialog();
         }
 
         private void buttonConsultar_Click(object sender, EventArgs e)
         {
+            if (dataGridViewPrincipal.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Não há registro selecionado.");
+                return;
+            }
+
+            // Pega o Cliente Selecionado no Grid.
+            Cliente clienteSelecionado = (dataGridViewPrincipal.SelectedRows[0].DataBoundItem as Cliente);
+
             // Instancia o formulário de cadastro.
-            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Consultar);
+            FrmCadastrar frmCadastrar = new FrmCadastrar(AcaoNaTela.Consultar, clienteSelecionado);
 
             frmCadastrar.ShowDialog();
         }
