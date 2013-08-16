@@ -8,10 +8,23 @@ namespace Apresentacao
         private void HablilitarEdicao(AcaoNaTela acaoNaTela)
         {
             this.textBoxNome.ReadOnly = (acaoNaTela == AcaoNaTela.Consultar);
+            this.textBoxNome.TabStop = (acaoNaTela != AcaoNaTela.Consultar);
             this.textBoxLimiteCompra.ReadOnly = (acaoNaTela == AcaoNaTela.Consultar);
+            this.textBoxLimiteCompra.TabStop = (acaoNaTela != AcaoNaTela.Consultar);
             this.dateNascimento.Enabled = !(acaoNaTela == AcaoNaTela.Consultar);
+            this.dateNascimento.TabStop = (acaoNaTela != AcaoNaTela.Consultar);
             this.radioSexoFeminino.Enabled = !(acaoNaTela == AcaoNaTela.Consultar);
+            this.radioSexoFeminino.TabStop = (acaoNaTela != AcaoNaTela.Consultar);
             this.radioSexoMasculino.Enabled = !(acaoNaTela == AcaoNaTela.Consultar);
+            this.radioSexoMasculino.TabStop = (acaoNaTela != AcaoNaTela.Consultar);
+            this.buttonSalvar.Visible = !(acaoNaTela == AcaoNaTela.Consultar);
+            if (acaoNaTela == AcaoNaTela.Consultar)
+            {
+                this.buttonCancelar.Text = "&Fechar";
+                this.buttonCancelar.Focus();
+            }
+            else
+                this.buttonCancelar.Text = "&Cancelar";
         }
 
         private void CarregarTela(Cliente cliente)
@@ -65,6 +78,11 @@ namespace Apresentacao
                 CarregarTela(cliente);
                 HablilitarEdicao(acaoNaTela);
             }
+        }
+
+        private void buttonCancelar_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
         }
     }
 }
